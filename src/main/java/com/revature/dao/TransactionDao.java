@@ -31,7 +31,7 @@ public class TransactionDao {
 	 * @param account
 	 * @return
 	 */
-	public List<Transaction> getTransactionByAccount(int account) {
+	public List<Transaction> getTransactionByAccount(int account) { // returns a list of transactions
 		List<Transaction> transactions = new ArrayList<Transaction>();
 		Transaction transaction;
 		try {

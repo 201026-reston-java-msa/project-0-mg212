@@ -76,7 +76,7 @@ public class Main {
 				ConnectionUtil cu = new ConnectionUtil();
 				AdminDao start = new AdminDao(cu.getConnection());
 				start.login();
-				logger.info("Admin login.");
+				logger.info("Admin login function.");
 				cu.close();
 				Main restart = new Main();
 				String[] arguments = new String[] {};

@@ -29,6 +29,7 @@ public class ConnectionUtil {
 	public ConnectionUtil() {
 		try {
 			this.connection = DriverManager.getConnection(this.url, this.username, this.password);
+			
 			logger.info("Connection to the database established");
 			
 		} catch (SQLException e) {

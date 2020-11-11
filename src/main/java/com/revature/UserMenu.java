@@ -70,8 +70,8 @@ public class UserMenu {
 			System.out.println("1. Deposit funds.");
 			System.out.println("2. Withdraw funds.");
 			System.out.println("3. Transfer funds.");
-			System.out.println("4. Transactions");
-			System.out.println("5. Logout");
+			System.out.println("4. Transactions.");
+			System.out.println("5. Logout.");
 
 			Scanner sc = new Scanner(System.in);
 			String command = sc.nextLine();
@@ -150,12 +150,13 @@ public class UserMenu {
 				TransactionDao transaction = new TransactionDao(cu.getConnection());
 				System.out.println("\nEnter account to review transaction history ");
 				int acc = sc.nextInt();
+				
 				try {
 					Thread.sleep(4000);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				System.out.print(transaction.getTransactionByAccount(acc));
+				System.out.print(transaction.getTransactionByAccount(acc)); // TransactionDao call
 				cu.close();
 				this.setResultset(user);
 			}

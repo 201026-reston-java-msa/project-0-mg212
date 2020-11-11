@@ -55,7 +55,7 @@ public class AdminMenu {
 			System.out.println("2. Withdraw funds.");
 			System.out.println("3. Transfer funds.");
 			System.out.println("4. All accounts.");
-			System.out.println("5. Logout");
+			System.out.println("5. Logout.");
 
 //			System.out.println("Please make your selection:");
 //			System.out.println("0. Pending applications."); 

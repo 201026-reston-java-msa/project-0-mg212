@@ -5,10 +5,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.sql.Timestamp;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.chainsaw.Main;
 
 import com.revature.models.Account;
 
@@ -195,8 +198,12 @@ public class AccountDao {
 	public void transfer(int uaccount, int money, int taccount) {
 		try {
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-			String content = money + " transferred into account: " + taccount + " at " + timestamp;
-			String content2 = money + " received from account: " + uaccount + " at " + timestamp;
+			String content = money + " transferred into account " + taccount + " at " + timestamp;
+			String content2 = money + " received from account " + uaccount + " at " + timestamp;
+			final Logger logger = Logger.getLogger(Main.class);
+			logger.info(money + " transferred into account " + taccount + " at " + timestamp);			
+//			logger.info(money + " transferred into account " + taccount + " at " + timestamp);			
+			
 			PreparedStatement pStatement = connection
 					.prepareStatement("update accounts set balance = balance -? where id = ?");
 			pStatement.setInt(1, money);
