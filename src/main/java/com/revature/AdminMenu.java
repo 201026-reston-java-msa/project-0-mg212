@@ -48,7 +48,7 @@ public class AdminMenu {
 	private void menu(String user) throws SQLException {
 		if (user != null) {
 //			System.out.println(new String(new char[50]).replace("\0", "\r\n"));
-			System.out.println("BANK OF MAX.\nWelcome to the admin function, " + user + "!");
+			System.out.println("BANK OF MAX.\nWelcome to the admin function, Admin!");
 			System.out.println("Please make your selection:");
 			System.out.println("0. Review applications.");
 			System.out.println("1. Deposit funds.");
@@ -92,7 +92,6 @@ public class AdminMenu {
 				logger.info(damount + " deposited into " + daccount + ".");
 
 //				System.out.println(damount + " deposited into " + daccount + ".");
-				
 				
 				cu.close();
 				this.menu(user);

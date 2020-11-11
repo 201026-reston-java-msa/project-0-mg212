@@ -37,6 +37,7 @@ public class AdminDao {
 			pStatement.setString(1, adminname);
 			pStatement.setString(2, password);
 			admin = pStatement.executeQuery();
+//			System.out.println("admin: "+admin);
 			if (admin.next()) {
 				AdminMenu login = new AdminMenu();
 				String loginAdmin = admin.getString("adminname");

@@ -34,9 +34,8 @@ public class UserMenu {
 	Connection connection;
 	User loginUser;
 	Main app;
-	
-	final Logger logger = Logger.getLogger(Main.class);
 
+	final Logger logger = Logger.getLogger(Main.class);
 
 	/**
 	 * 
@@ -92,16 +91,21 @@ public class UserMenu {
 				int daccount = sc.nextInt();
 				System.out.println("Enter the amount to deposit");
 				int damount = sc.nextInt();
-				account.deposit(daccount, damount);
-				try {
-					Thread.sleep(3000);
-				} catch (Exception e) {
-					e.printStackTrace();
+				if (damount > 0) {
+					account.deposit(daccount, damount);
+					try {
+						Thread.sleep(3000);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					System.out.println(damount + " succussfully deposited into the account " + daccount + ".");
+					System.out.print(account.getAccountByUser(user.getId()));
+					cu.close();
+					this.setResultset(user);
+				} else {
+					System.out.println("\nInvalid amount.");
+					this.setResultset(user);
 				}
-				System.out.println(damount + " succussfully deposited into the account " + daccount + ".");
-				System.out.print(account.getAccountByUser(user.getId()));
-				cu.close();
-				this.setResultset(user);
 			}
 			if (command.contentEquals("2")) { // withdraw funds
 				ConnectionUtil cu = new ConnectionUtil();
@@ -150,7 +154,7 @@ public class UserMenu {
 				TransactionDao transaction = new TransactionDao(cu.getConnection());
 				System.out.println("\nEnter account to review transaction history ");
 				int acc = sc.nextInt();
-				
+
 				try {
 					Thread.sleep(4000);
 				} catch (Exception e) {

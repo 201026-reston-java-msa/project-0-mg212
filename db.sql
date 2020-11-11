@@ -3,7 +3,7 @@
 --drop table if exists transactions;
 --drop table if exists accounts;
 --drop table if exists admins;
---
+
 --truncate table useraccounts;
 --truncate table users;
 --truncate table transactions;

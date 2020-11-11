@@ -1,0 +1,20 @@
+2020-11-11 06:58:12 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 06:58:31 INFO  Main:33 - Connection to the database established
+2020-11-11 06:58:45 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 06:58:49 INFO  Main:33 - Connection to the database established
+2020-11-11 06:59:02 INFO  Main:33 - Connection to the database established
+2020-11-11 06:59:24 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:01:21 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:01:28 INFO  Main:33 - Connection to the database established
+2020-11-11 07:01:36 INFO  Main:33 - Connection to the database established
+2020-11-11 07:02:29 INFO  Main:33 - Connection to the database established
+2020-11-11 07:04:34 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:04:39 INFO  Main:33 - Connection to the database established
+2020-11-11 07:04:43 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:04:48 INFO  Main:33 - Connection to the database established
+2020-11-11 07:15:52 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:15:58 INFO  Main:33 - Connection to the database established
+2020-11-11 07:17:23 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:50:26 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:55:38 INFO  Main:33 - Welcome Menu - Bank of Max
+2020-11-11 07:55:43 INFO  Main:33 - Connection to the database established
