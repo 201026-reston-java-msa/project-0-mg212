@@ -4,11 +4,11 @@
 --drop table if exists accounts;
 --drop table if exists admins;
 
---truncate table useraccounts;
---truncate table users;
---truncate table transactions;
---truncate table accounts;
---truncate table admins;
+--truncate table useraccounts cascade;
+--truncate table users cascade;
+--truncate table transactions cascade;
+--truncate table accounts cascade;
+--truncate table admins cascade;
 
 commit;
 rollback;

@@ -166,7 +166,8 @@ public class UserMenu {
 			}
 			if (command.contentEquals("5")) { // logout to Main
 				user = null;
-				System.out.println("Thank you for choosing Bank of Max!");
+				System.out.println("Thank you for choosing Bank of Max! "
+						+ "You have successfully logged out.");
 				Main restart = new Main();
 				String[] arguments = new String[] {};
 				restart.main(arguments);

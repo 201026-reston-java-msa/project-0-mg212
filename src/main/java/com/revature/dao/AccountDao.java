@@ -46,9 +46,9 @@ public class AccountDao {
 			pStatement.setBoolean(3, false);
 			pStatement2.setInt(1, num);
 			pStatement2.setInt(2, 1);
+			System.out.println("Thank you for applying!");
 			pStatement.executeUpdate();
 			pStatement2.executeUpdate();
-			System.out.println("Thank you for applying!");
 		} catch (SQLException e) {
 			e.getMessage();
 		} finally {

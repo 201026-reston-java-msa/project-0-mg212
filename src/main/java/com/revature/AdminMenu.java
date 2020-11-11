@@ -48,13 +48,13 @@ public class AdminMenu {
 	private void menu(String user) throws SQLException {
 		if (user != null) {
 //			System.out.println(new String(new char[50]).replace("\0", "\r\n"));
-			System.out.println("BANK OF MAX.\nWelcome to the admin function, Admin!");
-			System.out.println("Please make your selection:");
+			System.out.println("\nWelcome to the admin function, Admin!");
+			System.out.println("\nPlease make your selection:\n");
 			System.out.println("0. Review applications.");
 			System.out.println("1. Deposit funds.");
 			System.out.println("2. Withdraw funds.");
 			System.out.println("3. Transfer funds.");
-			System.out.println("4. All accounts.");
+			System.out.println("4. All active accounts.");
 			System.out.println("5. Logout.");
 
 //			System.out.println("Please make your selection:");
@@ -155,7 +155,8 @@ public class AdminMenu {
 			if (command == 5) { // logout
 				user = null;
 				logger.info("Logout logger");
-				System.out.println("Thank you for choosing Bank of Max!");
+				System.out.println("Thank you for choosing Bank of Max! "
+						+ "You have successfully logged out.");
 				Main restart = new Main();
 				String[] arguments = new String[] {};
 				restart.main(arguments);

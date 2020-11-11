@@ -26,10 +26,10 @@ public class UserDao {
 		this.connection = connection;
 	}
 
-	public void insert() {
+	public void insert() { // register new user service
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
-		System.out.println("\nWelcome to Bank of Max new account service!");
+		System.out.println("\nWelcome to Bank of Max new user service!");
 		System.out.println("Please enter username");
 		String name = sc.nextLine();
 		System.out.println("Please enter password");

@@ -62,7 +62,7 @@ public class Main {
 				String[] arguments = new String[] {};
 				restart.main(arguments);
 			}
-			if (command.contentEquals("2")) { // register
+			if (command.contentEquals("2")) { // register new user
 				ConnectionUtil cu = new ConnectionUtil();
 				UserDao start = new UserDao(cu.getConnection());
 				start.insert();
