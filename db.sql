@@ -1,14 +1,14 @@
-drop table if exists useraccounts;
-drop table if exists users;
-drop table if exists transactions;
-drop table if exists accounts;
-drop table if exists admins;
-
-truncate table useraccounts;
-truncate table users;
-truncate table transactions;
-truncate table accounts;
-truncate table admins;
+--drop table if exists useraccounts;
+--drop table if exists users;
+--drop table if exists transactions;
+--drop table if exists accounts;
+--drop table if exists admins;
+--
+--truncate table useraccounts;
+--truncate table users;
+--truncate table transactions;
+--truncate table accounts;
+--truncate table admins;
 
 commit;
 rollback;
@@ -62,3 +62,5 @@ foreign key(checkaccount) references accounts(id) on delete cascade on update ca
 
 insert into admins(adminname,password) values ('admin','pass');
 insert into accounts values(12345, '5000', false);
+insert into accounts values(55555, '10000', false);
+insert into accounts values(77777, '5000', false);
